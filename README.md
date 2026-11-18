@@ -28,7 +28,11 @@ To leave, open TestFlight, Cross Clipboard, "Stop Testing", then delete the app.
 macOS 12 or later.
 
 1. Download `Cross-Clipboard-<version>-macos-universal.zip` from [the latest release](https://github.com/chungxon/cross-clipboard-release/releases/latest), for Apple silicon and Intel Macs. Unzip it and move `Cross Clipboard.app` to Applications
-2. Open it. macOS says it cannot verify the app: click Done. Then System Settings, Privacy & Security, scroll down, Open Anyway, and enter your Mac password. On macOS 14 or earlier, a right-click on the app, Open, also works. Do this again for each new zip
+2. Open it. macOS says it cannot verify the app: click Done. Then either:
+   - In Terminal, run `xattr -dr com.apple.quarantine "/Applications/Cross Clipboard.app"` and open the app again
+   - Or System Settings, Privacy & Security, scroll down, Open Anyway, and enter your Mac password. On macOS 14 or earlier, a right-click on the app, Open, also works
+
+   Do this again for each new zip
 3. Closing the window, or `Cmd+Q`, keeps the app running in the menu bar. Quit it from the menu bar icon's menu
 
 To remove it, quit the app and move it to the Trash.
