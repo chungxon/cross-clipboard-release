@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email
+    url: https://github.com/chungxon/cross-clipboard-release#feedback
+    about: Email lesonlhld@gmail.com for anything private, or without a GitHub account.
+  - name: Privacy Policy
+    url: https://crossclipboard.chungxon.dev/privacy
+    about: What the app and the server keep.

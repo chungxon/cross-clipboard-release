@@ -1,0 +1,22 @@
+name: Idea
+description: Something the app could do better
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - Android
+        - iPhone or iPad
+        - macOS
+        - Windows
+        - All
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What you want to do, and why it matters to you.
+    validations:
+      required: true
