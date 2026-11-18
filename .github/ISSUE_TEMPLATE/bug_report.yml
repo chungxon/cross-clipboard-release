@@ -1,3 +1,5 @@
+# Settings, About, Contact Support fills in `version` and `system`: keep
+# both ids, builds already out send them.
 name: Bug report
 description: Something does not work as expected
 labels: [bug]
@@ -6,19 +8,8 @@ body:
     attributes:
       value: |
         Issues are public. Never post your PIN, passwords, your email or anything you copied that should stay private.
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Platform
-      description: Pick every device where it happens.
-      multiple: true
-      options:
-        - Android
-        - iPhone or iPad
-        - macOS
-        - Windows
-    validations:
-      required: true
+
+        Something private? Email lesonlhld@gmail.com. An idea? [Share it here](https://github.com/chungxon/cross-clipboard-release/issues/new?template=feature_request.yml).
   - type: input
     id: version
     attributes:
@@ -31,7 +22,7 @@ body:
     id: system
     attributes:
       label: Device and system version
-      description: For example Pixel 8, Android 15, or Windows 11 (run `winver`).
+      description: For example Pixel 8, Android 15, or Windows 11 (run `winver`). Add the other device if it involves two.
     validations:
       required: true
   - type: textarea
