@@ -41,8 +41,8 @@ To remove it, quit the app and move it to the Trash.
 
 Windows 10 or 11, 64-bit.
 
-1. Download `Cross-Clipboard-<version>-windows-x64.zip` from [the latest release](https://github.com/chungxon/cross-clipboard-release/releases/latest). Unzip it somewhere it can stay, for example in Documents. Open at Login starts the app from there
-2. Open `cross_clipboard.exe`. The app is not signed, so Windows SmartScreen warns about it: click "More info", then "Run anyway"
+1. Download `Cross-Clipboard-<version>-windows-x64.zip` from [the latest release](https://github.com/chungxon/cross-clipboard-release/releases/latest). Right-click it, Extract All, to a folder where it can stay, for example in Documents. Open at Login starts the app from there
+2. Open `cross_clipboard.exe` in the extracted folder. The app is not signed, so Windows SmartScreen warns about it: click "More info", then "Run anyway"
 3. Closing the window keeps the app running in the system tray (the up arrow next to the clock). Quit it from the tray icon's menu
 
 To remove it, quit the app, delete the folder, and delete `%APPDATA%\dev.chungxon\Cross Clipboard`, where it keeps its history and key.
@@ -54,6 +54,7 @@ To remove it, quit the app, delete the folder, and delete `%APPDATA%\dev.chungxo
 3. Set a PIN of at least 6 characters. The PIN makes the key that encrypts your copies. The server never has it, so **a lost PIN cannot be recovered**: Forgot PIN resets it and the synced history is lost
 4. On your other devices, sign in with the same account and PIN. Or choose Sign In with a Device on the new device (a computer shows a QR) and scan it from a phone already signed in (Settings, Link a Device): no PIN to type
 5. On Android and iOS, allow notifications when asked, to get copies from other devices while the app is closed
+6. Home shows First Steps: add a device, try a copy, then Quick Access on a phone or a picker shortcut on a computer
 
 ## What to try
 
@@ -87,6 +88,7 @@ Windows:
 iOS:
 
 - iOS asks "Allow Paste" each time the app reads a copy made in another app, so copies are sent by hand by default. To stop the prompt, Settings, Sync, Paste Without Asking opens the app's page in iOS Settings: set Paste from Other Apps to Allow
+- Share and the keyboard send right away only within about an hour of the app's last run. After that they say "Sends when you open Cross Clipboard": open the app once
 - An account made with Continue with Apple: Delete Account confirms with Apple again. If you delete it another way, also remove the app in your Apple ID settings, under Sign in with Apple
 
 macOS:
@@ -109,7 +111,7 @@ The full list for each build is in the release notes on Play, TestFlight and Git
 
 ## Feedback
 
-[Open an issue](https://github.com/chungxon/cross-clipboard-release/issues/new/choose) (a GitHub account is needed), or email `lesonlhld@gmail.com`. Issues are public. Please say:
+[Open an issue](https://github.com/chungxon/cross-clipboard-release/issues/new/choose) (a GitHub account is needed), or email `lesonlhld@gmail.com`. In the app, Settings, About, Contact Support opens it with the version and the device filled in. Issues are public. Please say:
 
 - what you did, what you expected, what happened
 - the device model and its system version (Android, iOS, macOS), or the Windows version (run `winver`)
@@ -124,4 +126,4 @@ Play and TestFlight update the app like any other. To get a fix sooner, open the
 
 To get an email for each new build, Watch [the release repo](https://github.com/chungxon/cross-clipboard-release) on GitHub: Custom, Releases.
 
-On macOS, quit the app and replace it in Applications with the one from the new zip. On Windows nothing updates by itself: download the new zip from Releases. Quit the app from the tray, replace the folder's files with the new ones, and open it again. The history and the key stay, as they are kept in `%APPDATA%`.
+On macOS, quit the app and replace it in Applications with the one from the new zip. On Windows nothing updates by itself: download the new zip from Releases, quit the app from the tray, replace the folder's files with the new ones, and open it again. The history and the key stay, as they are kept in `%APPDATA%`. On both, Settings, About, Check for Updates opens Releases.
