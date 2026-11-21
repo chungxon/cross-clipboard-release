@@ -6,8 +6,8 @@ Contact: `lesonlhld@gmail.com`. Bugs and ideas: [open an issue](https://github.c
 
 ## Join on Android
 
-1. Email `lesonlhld@gmail.com` the Google account email your phone uses for Play. You are added to the tester list
-2. Open the opt-in link you get back, on the phone or in a browser signed in to that account, and tap "Become a tester"
+1. Join the Google Group [test-it-together](https://groups.google.com/g/test-it-together) with the Google account your phone uses for Play
+2. Open the [opt-in link](https://play.google.com/apps/testing/dev.chungxon.crossclipboard), on the phone or in a browser signed in to that account, and tap "Become a tester"
 3. Install Cross Clipboard from the Play link on that page. It may take a few minutes to show up after you join
 4. Please stay in the test for at least 14 days: Google lets the app go public only after 12 testers stayed that long
 
@@ -17,8 +17,8 @@ To leave, open the opt-in link again and tap "Leave the program", then uninstall
 
 iOS 15 or later.
 
-1. Email `lesonlhld@gmail.com` the email of your Apple ID. You get a TestFlight invite by email
-2. Install TestFlight from the App Store, then open the invite on the device and tap "Accept" and "Install"
+1. Open [the TestFlight link](https://testflight.apple.com/join/mKMy2upy) on the iPhone or iPad
+2. Install TestFlight from the App Store if it asks, then tap "Accept" and "Install"
 3. TestFlight builds stop working after 90 days: install the newer build when TestFlight offers it
 
 To leave, open TestFlight, Cross Clipboard, "Stop Testing", then delete the app.
