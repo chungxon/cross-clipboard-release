@@ -52,7 +52,7 @@ To remove it, quit the app, delete the folder, and delete `%APPDATA%\dev.chungxo
 1. Create an account with your email and a password (at least 8 characters), or Continue with Google or Apple, or Email Me a Code. Apple can hide your email: the app still sends the code to the relay address Apple gives it
 2. With email and password, open the link in the confirmation email, then sign in
 3. Set a PIN of at least 6 characters. The PIN makes the key that encrypts your copies. The server never has it, so **a lost PIN cannot be recovered**: Forgot PIN resets it and the synced history is lost
-4. On your other devices, sign in with the same account and PIN. Or choose Sign In with a Device on the new device (a computer shows a QR) and scan it from a phone already signed in (Settings, Link a Device): no PIN to type
+4. On your other devices, sign in with the same account and PIN. Or choose Sign In with a Device on the new device (a computer shows a QR) and scan it from a phone already signed in (Settings, Link a Device). Turn on Send Encryption Key there, or the new device asks for the PIN
 5. On Android and iOS, allow notifications when asked, to get copies from other devices while the app is closed
 6. Home shows First Steps: add a device, try a copy, then Quick Access on a phone or a picker shortcut on a computer
 
@@ -88,6 +88,7 @@ Windows:
 iOS:
 
 - iOS asks "Allow Paste" each time the app reads a copy made in another app, so copies are sent by hand by default. To stop the prompt, Settings, Sync, Paste Without Asking opens the app's page in iOS Settings: set Paste from Other Apps to Allow
+- The Shortcuts actions ask you to unlock the iPhone first
 - Share and the keyboard send right away only within about an hour of the app's last run. After that they say "Sends when you open Cross Clipboard": open the app once
 - An account made with Continue with Apple: Delete Account confirms with Apple again. If you delete it another way, also remove the app in your Apple ID settings, under Sign in with Apple
 
@@ -100,7 +101,7 @@ The full list for each build is in the release notes on Play, TestFlight and Git
 
 ## Privacy
 
-- Your copies and images are encrypted on the device with your PIN's key. The server stores them encrypted and cannot read them, and deletes them after 30 days
+- Your copies and images are encrypted on the device with your PIN's key. The server stores them encrypted and cannot read them, and deletes them after 7 days
 - The server sees your email, your account and device ids, device names, and when and how big each copy is
 - Crash reports (Android, iOS): when the app crashes, a report with the error's type, where in the code it happened, the phone model and the system version goes to Firebase Crashlytics. It never holds your copies. Reports are deleted after 90 days
 - Usage counts and timings (Android, iOS): which features are used (a sign-in method, a copy sent and whether it was text or an image, a second device, the first copy received, a setting changed) and how long some steps take go to Firebase, never what you copied. Turn it off in Settings, About, Share Usage Data
