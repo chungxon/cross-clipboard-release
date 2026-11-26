@@ -74,7 +74,7 @@ To remove it, quit the app, delete the folder, and delete `%APPDATA%\dev.chungxo
 - Android lets an app read the clipboard only while it is open. A copy made in another app is sent when you open Cross Clipboard, or right away through Share, the text menu, the tile, the Floating Bubble or the keyboard
 - The Pinned Notification and the widgets get new copies while the app is closed only with Clipboard Notifications on (Settings, Notifications), and only texts. Images and long texts arrive when the app opens
 - A notification for a copy shows its first 100 characters, a password too. To keep them off the lock screen, choose "Hide sensitive content" in the phone's lock screen notification settings
-- Copies from password managers are not filtered: they are sent like any other copy
+- Copies from password managers are sent like any other copy. One marked private stays private on your other devices, so most clipboard histories there skip it (Samsung Keyboard does not). A device on an older build skips it
 - A short or simple PIN is easier to guess for someone who gets the encrypted data from the server. Use a long one
 - Please do not tap ads just to support the app: AdMob counts such taps as invalid and can turn the ads off
 
@@ -114,7 +114,9 @@ The full list for each build is in the release notes on Play, TestFlight and Git
 
 ## Feedback
 
-[Open an issue](https://github.com/chungxon/cross-clipboard-release/issues/new/choose) (a GitHub account is needed), or email `lesonlhld@gmail.com`. In the app, Settings, About, Contact Support opens it with the version and the device filled in. Issues are public. Please say:
+Copies not arriving? Settings, Sync, Check Sync shows what stops sync on this device, with a button to fix it.
+
+[Open an issue](https://github.com/chungxon/cross-clipboard-release/issues/new/choose) (a GitHub account is needed), or email `lesonlhld@gmail.com`. In the app, Settings, About, Contact Support opens it with the version, the device and the sync settings filled in, never what you copied. Issues are public. Please say:
 
 - what you did, what you expected, what happened
 - the device model and its system version (Android, iOS, macOS), or the Windows version (run `winver`)
@@ -129,4 +131,4 @@ Play and TestFlight update the app like any other. To get a fix sooner, open the
 
 To get an email for each new build, Watch [the release repo](https://github.com/chungxon/cross-clipboard-release) on GitHub: Custom, Releases.
 
-On macOS, quit the app and replace it in Applications with the one from the new zip. On Windows nothing updates by itself: download the new zip from Releases, quit the app from the tray, replace the folder's files with the new ones, and open it again. The history and the key stay, as they are kept in `%APPDATA%`. On both, Settings, About, Check for Updates opens Releases.
+On macOS, quit the app and replace it in Applications with the one from the new zip. On Windows nothing updates by itself: download the new zip from Releases, quit the app from the tray, replace the folder's files with the new ones, and open it again. The history and the key stay, as they are kept in `%APPDATA%`. On both, the app looks for a new build when it opens and once a day: Settings, About then shows Update Available with the version. That row, or Check for Updates, opens Releases.
