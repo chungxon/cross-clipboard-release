@@ -2,7 +2,7 @@
 
 Thanks for testing. Cross Clipboard sends what you copy to your other devices, end-to-end encrypted. This beta is Android, through Google Play, iPhone and iPad, through TestFlight, and Windows and macOS, as a zip from [the latest release](https://github.com/chungxon/cross-clipboard-release/releases/latest).
 
-![A copy on a Mac shows up on an Android phone, then the phone sends one back](https://github.com/chungxon/cross-clipboard-release/raw/main/media/demo.gif)
+![A text, then a photo, copied on a Mac reach an iPhone, an Android phone and a Windows PC, then each feature plays in turn](https://github.com/chungxon/cross-clipboard-release/raw/main/media/demo.gif)
 
 Contact: `lesonlhld@gmail.com`. Bugs and ideas: [open an issue](https://github.com/chungxon/cross-clipboard-release/issues/new/choose).
 
